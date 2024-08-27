@@ -30,4 +30,11 @@ Home
     <span class="sr-only">Next</span>
   </a>
 </div>
+<div>
+	{% for data in data %}
+	<div><h1> {{data.stu_name}} </h1></div>
+	<div><h1> {{data.stu_father}} </h1></div>
+	<div><h1> {{data.joindate}} </h1></div>
+ {% endfor %}
+</div>
 {% endblock content%}

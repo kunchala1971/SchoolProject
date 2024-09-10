@@ -26,5 +26,6 @@ urlpatterns = [
     path('services/',services,name='services'),
     path('login/',login,name='login'),
     path('profiles/',profiles	,name='profiles'),
-    path('transport/',transport,name='transport'),
+    path('transport/',transport,name='transport')
+    
 ]

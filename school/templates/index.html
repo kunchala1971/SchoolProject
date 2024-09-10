@@ -42,7 +42,7 @@ Home
 	<th>Action</td>
 </tr>
 
-	{% for data in data %}
+	{% for data in students_data %}
 	<tr>
 		<td> {{data.stu_name}}</td>
 		<td> {{data.stu_father}}</td>
@@ -62,5 +62,21 @@ Home
 	</tr>
  {% endfor %}
 </table>
+<div>
+	<form  method="post">
+	{{admission_data.as_p}}
+	{% csrf_token %}
+	{% comment %} <table>
+	{{for x,y of admission_data.items}}
+	<tr>
+		<td> {{x}}</td>
+		<td> {{y}}</td>
+		</tr>
+		{% endfor %}
+	</table> {% endcomment %}
+	<input type="submit" value="Save Data"/>
+	</form>
 </div>
+</div>
+
 {% endblock content%}

@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% block title%}
+Home
+{% endblock title%}
+
+{% block content%}
+
+<div>
+	<form  method="post">
+	{{admission_data.as_p}}
+	{% csrf_token %}
+	<input type="submit" value="Save Data"/>
+	</form>
+</div>
+{% endblock content%}

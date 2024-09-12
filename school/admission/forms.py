@@ -1,5 +1,5 @@
 from django import forms
-
+from .models import Admission
 class admission(forms.Form):
   id=forms.IntegerField()
   stu_name=forms.CharField()

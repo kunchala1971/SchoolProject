@@ -1,0 +1,50 @@
+
+--------------------------------------
+ID				: 5
+Name			: sdf
+Father		: asd
+Join Date	: 2024-08-01
+Course		: Python
+Fees			: 111
+--------------------------------------
+ID				: 44
+Name			: asdfasd
+Father		: asdfasd
+Join Date	: 2024-08-07
+Course		: MYSQl
+Fees			: 333
+--------------------------------------
+ID				: 9
+Name			: sdsdf
+Father		: asdfsad
+Join Date	: 2024-08-19
+Course		: MYSQl
+Fees			: 333
+--------------------------------------
+ID				: 11
+Name			: Ramesh
+Father		: Srinivas
+Join Date	: 2024-08-19
+Course		: Python
+Fees			: 3333
+--------------------------------------
+ID				: 12
+Name			: SrinivasArao
+Father		: KK
+Join Date	: 2024-08-19
+Course		: Python
+Fees			: 3333
+--------------------------------------
+ID				: 99
+Name			: Kunchala SrinivasaRao
+Father		: Kondaiah
+Join Date	: 2024-09-12
+Course		: Python
+Fees			: 3000
+--------------------------------------
+ID				: 100
+Name			: Radha
+Father		: Srinivas
+Join Date	: 2024-09-12
+Course		: Python
+Fees			: 4444

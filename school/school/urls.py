@@ -11,5 +11,5 @@ urlpatterns = [
     path('login/',login,name='login'),
     path('profiles/',profiles	,name='profiles'),
     path('transport/',transport,name='transport'),
-    path('admissionentry',admissionentry,name='admissionentry')  
+    path('admissionentry',admissionentry,name="admissionentry"),
 ]

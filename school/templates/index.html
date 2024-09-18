@@ -2,7 +2,6 @@
 {% block title%}
 Home
 {% endblock title%}
-
 {% block content%}
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -34,19 +33,26 @@ Home
 	<button class="btn-readmore">Read more...</button>
 </div>
 <div>
+	<h1>Count:{{count}}</h1>
 	<table class="table table-dark table-sm">
 <tr>
+	<th>ID</th>
 	<th>Stu Name</th>
 	<th>Father Name</th>
 	<th>Join Date</th>
+	<th>Fees</th>
+	<th>Course</th>
 	<th>Action</td>
 </tr>
 
 	{% for data in students_data %}
 	<tr>
+		<td> {{data.id}}</td>
 		<td> {{data.stu_name}}</td>
 		<td> {{data.stu_father}}</td>
 		<td>{{data.joindate}}</td>
+		<td>{{data.fees}}</td>
+		<td>{{data.stu_class}}</td>
 		<td>
 			<span >
 			<svg class="action-icons" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
@@ -61,8 +67,37 @@ Home
 	</td>
 	</tr>
  {% endfor %}
+
 </table>
 
+</div>
+<div>
+	<table style="width:400px; margin:auto;background:yellow;">
+		<tr>
+			<td>Id:</td>
+			<td>{{result.id}}
+		</tr>
+		<tr>
+			<td>Name:</td>
+			<td>{{result.stu_name}}
+		</tr>
+		<tr>
+			<td>Father Name:</td>
+		<td> {{result.stu_father}}</td>
+		</tr>
+		<tr>
+			<td>Join Date:</td>
+		<td>{{result.joindate}}</td>
+		</tr>
+		<tr>
+			<td>Fees:</td>
+		<td>{{result.fees}}</td>
+		</tr>
+		<tr>
+			<td>Course:</td>
+		<td>{{result.stu_class}}</td>
+		</tr>
+	</table>
 </div>
 
 {% endblock content%}
